@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="container-calculator">
+      <div id="result">
+        <input type="text" id="calculator-display" readonly="true" value="0" />
+      </div>
+      <div id="container-buttons">
+        <div class="row">
+          <button class="number-button" onclick="onAddNumber(7)">7</button>
+          <button class="number-button" onclick="onAddNumber(8)">8</button>
+          <button class="number-button" onclick="onAddNumber(9)">9</button>
+          <button class="number-button" onclick="onAddOperation('+')">+</button>
+        </div>
+        
+        <div class="row">
+          <button class="number-button" onclick="onAddNumber(4)">4</button>
+          <button class="number-button" onclick="onAddNumber(5)">5</button>
+          <button class="number-button" onclick="onAddNumber(6)">6</button>
+          <button class="number-button" onclick="onAddOperation('-')">-</button>
+        </div>
+        
+        <div class="row">
+          <button class="number-button" onclick="onAddNumber(1)">1</button>
+          <button class="number-button" onclick="onAddNumber(2)">2</button>
+          <button class="number-button" onclick="onAddNumber(3)">3</button>
+          <button class="number-button" onclick="onAddOperation('*')">*</button>
+        </div>
+        
+        <div class="row">
+          <button class="number-button" onclick="onAddNumber(0)">0</button>
+          <button class="number-button" onclick="onAddOperation('.')">.</button>
+          <button class="number-button" onclick="onAddOperation('/')">/</button>
+          <button class="number-button" onclick="onCalculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
